@@ -1,0 +1,27 @@
+{
+    "name": "com.microsoft.mixedreality.volumetric",
+    "displayName": "Mixed Reality Volumetric",
+    "version": "0.3.25-development",
+    "unity": "2022.3",
+    "description": "Extension to Unity for Mixed Reality Volumetric Platform",
+    "keywords": [
+        "microsoft",
+        "mixed",
+        "reality",
+        "volumetric"
+    ],
+    "author": "Microsoft",
+    "dependencies": {},
+    "license": "MIT",
+    "files": [
+        "/Runtime/**/*",
+        "/VolumetricCsLibrary/**/*",
+        "*.meta",
+        "CHANGELOG.md*",
+        "LICENSE.md*",
+        "package.json*",
+        "!**/.gitignore",
+        "!**/CMakeLists.txt",
+        "!**/*.pdb*"
+    ]
+}

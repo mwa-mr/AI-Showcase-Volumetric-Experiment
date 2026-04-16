@@ -1,0 +1,19 @@
+{
+    "name": "Volumetric.Player",
+    "rootNamespace": "",
+    "references": [
+        "glTFast.Export",
+        "glTFast",
+        "Unity.TextMeshPro",
+        "Microsoft.MixedReality.Volumetric"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <!-- Package version --> <Version>0.3.25</Version>
+    <AssemblyVersion>0.3.25.0</AssemblyVersion>
+    <FileVersion>0.3.25.0</FileVersion>
+    <InformationalVersion>0.3.25-develop</InformationalVersion>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+</Project>

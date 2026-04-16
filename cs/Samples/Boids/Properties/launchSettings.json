@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CsBoids (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CsBoids (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

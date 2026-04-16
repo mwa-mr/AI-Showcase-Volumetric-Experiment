@@ -1,0 +1,10 @@
+{
+    "profiles": {
+        "SpatialPad (Package)": {
+            "commandName": "MsixPackage"
+        },
+        "SpatialPad (Unpackaged)": {
+            "commandName": "Project"
+        }
+    }
+}

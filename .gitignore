@@ -1,0 +1,6 @@
+# Ignore cmake build files
+build/
+
+# Ignore .nuget cache folder
+.nuget/
+

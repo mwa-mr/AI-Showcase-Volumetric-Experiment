@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window 
+    x:Class="VolumetricMusicPlayer.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VolumetricMusicPlayer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    Title="Volumetric Music">
+    <Grid x:Name="MainRoot" Background="LightGray">
+        <local:CapturableView x:Name="LiveView"/>
+        <Grid x:Name="SettingsPanel" Background="#ddcccccc" Visibility="Collapsed">
+            <Grid CornerRadius="30"  Background="#ddffffff" Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="175"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Margin="5" CornerRadius="30" Background="#eeeeeeee" >
+                    <Grid Margin="15" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                        <TextBlock VerticalAlignment="Top"  Margin="0,0,0,-30" FontSize="10"  Foreground="#ffaaaaaa">Stats</TextBlock>
+
+                        <TextBlock x:Name="Stats" VerticalAlignment="Top" Margin="0,13"></TextBlock>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="1" Margin="5" CornerRadius="30" Background="#eeeeeeee" >
+                    <StackPanel Orientation="Vertical" Margin="5">
+                        <TextBlock VerticalAlignment="Center" Margin="5,0,0,-30" FontSize="10"  Foreground="#ffaaaaaa">Bands</TextBlock>
+                        <StackPanel Orientation="Horizontal" Margin="5" Height="50">
+                            <TextBlock VerticalAlignment="Center" Width="28" Text="{Binding ElementName=Rows, Path=Value}"></TextBlock>
+                            <Slider x:Name="Rows" Minimum="10" VerticalAlignment="Center" Maximum="1000" StepFrequency="50" Value="600" Margin="10" Width="200" ValueChanged="Rows_ValueChanged"/>
+                        </StackPanel>
+                        <TextBlock VerticalAlignment="Center"  Margin="5,0,0,-30" FontSize="10" Foreground="#ffaaaaaa">History</TextBlock>
+                        <StackPanel Orientation="Horizontal" Margin="5">
+                            <TextBlock VerticalAlignment="Center" Width="28"  Text="{Binding ElementName=History, Path=Value}"></TextBlock>
+                            <Slider x:Name="History" Minimum="10" VerticalAlignment="Center" Maximum="1000" StepFrequency="50" Value="200" Margin="10" Width="200" ValueChanged="Rows_ValueChanged"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.ColumnSpan="2" Grid.Row="1" Margin="5,5,5,5" CornerRadius="30" Background="#eeeeeeee" >
+                    <Button x:Name="CloseSettingsButton" Padding="15" Width="150" HorizontalAlignment="Center">Close</Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
+
+    

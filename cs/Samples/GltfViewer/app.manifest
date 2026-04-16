@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3">
+  <!-- This is the application manifest file for the WinForms app -->
+  <assemblyIdentity version="1.0.0.0" name="Glb File Viewer" processorArchitecture="*"/>
+  
+  <!-- File Type Association (optional, for .glb or other file types) -->
+  <fileAssociation>
+    <fileType id="GLBFile" extension=".glb" description="GLB 3D Model File" />
+  </fileAssociation>
+
+</assembly>

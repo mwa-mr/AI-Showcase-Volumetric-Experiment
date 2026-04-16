@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsPerformanceRecorder Version="1.0" Author="Microsoft Corporation" Copyright="Microsoft Corporation" Company="Microsoft Corporation">
+  <Profiles>
+    <EventCollector Id="EventCollector_UserMode" Name="WPR User Mode Event Collector">
+      <BufferSize Value="1020" />
+      <Buffers Value="95" />
+    </EventCollector>
+
+    <EventProvider Id="Microsoft.MixedReality.Volumetric.Platform.Perf" Name="ecd0c08b-1d47-4e37-ac37-ff9345a0ce36" Level="5">
+      <Keywords>
+        <Keyword Value="0x4" />
+      </Keywords>
+    </EventProvider>
+
+    <Profile Id="VaSDKPerf.Verbose.File" Name="VaSDKPerf" Description="Volumetric Platform perf provider" LoggingMode="File" DetailLevel="Verbose" Default="true">
+      <Collectors>
+        <EventCollectorId Value="EventCollector_UserMode">
+          <EventProviders>
+            <EventProviderId Value="Microsoft.MixedReality.Volumetric.Platform.Perf" />
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+</WindowsPerformanceRecorder>

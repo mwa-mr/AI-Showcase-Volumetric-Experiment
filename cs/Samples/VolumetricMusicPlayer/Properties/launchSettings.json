@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "VolumetricMusicPlayer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "VolumetricMusicPlayer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

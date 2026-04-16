@@ -1,0 +1,40 @@
+<Solution>
+  <Project Path="..\Library\VolumetricCsLibrary.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="Boids\CsBoids.csproj">
+    <Platform Project="x64" />
+    <Deploy />
+  </Project>
+  <Project Path="HelloWorld\CsHelloWorld.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="MaterialExplorer\CsMaterialExplorer.csproj">
+    <Platform Project="x64" />
+    <Deploy />
+  </Project>
+  <Project Path="MultipleVolumes\CsMultipleVolumes.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="SpatialInputs\CsSpatialInputs.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="SpinningCube\CsSpinningCube.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="Clock\CsClock.csproj"/>
+  <Project Path="GltfViewer\CsGltfViewer.csproj"/>
+  <Project Path="NamedNodes\CsNamedNodes.csproj" />
+  <Project Path="CsProductConfigurator\CsProductConfigurator.csproj">
+    <Platform Project="x64" />
+    <Deploy />
+  </Project>
+  <Project Path="SpatialPad\SpatialPad.csproj">
+    <Platform Project="x64" />
+    <Deploy />
+  </Project>
+  <Project Path="VolumetricMusicPlayer\VolumetricMusicPlayer.csproj">
+    <Platform Project="x64" />
+    <Deploy />
+  </Project>
+</Solution>

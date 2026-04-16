@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CsProductConfigurator (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CsProductConfigurator (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

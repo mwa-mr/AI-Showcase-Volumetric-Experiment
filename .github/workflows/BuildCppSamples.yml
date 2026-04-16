@@ -1,0 +1,28 @@
+name: Build C++ Samples
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        working-directory: ./cpp
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Configure
+      run: cmake -S . -B build -DCMAKE_SYSTEM_VERSION="10.0.26100.0" -DCMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION="10.0.26100.0" -DCMAKE_CXX_FLAGS="/DNTDDI_VERSION=0x0A00000B /EHsc" -DCMAKE_C_FLAGS="/DNTDDI_VERSION=0x0A00000B"
+
+    - name: Build samples
+      run: msbuild .\build\VolumetricSamples.sln

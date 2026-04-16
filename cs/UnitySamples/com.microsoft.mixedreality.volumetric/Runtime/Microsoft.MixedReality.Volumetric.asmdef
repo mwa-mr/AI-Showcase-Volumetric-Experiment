@@ -1,0 +1,14 @@
+{
+    "name": "Microsoft.MixedReality.Volumetric",
+    "rootNamespace": "Microsoft.MixedReality.Volumetric",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": true
+}

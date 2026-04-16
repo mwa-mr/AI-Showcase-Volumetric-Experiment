@@ -1,0 +1,4 @@
+
+# Because the CS library consists entirely of C# scripts without Unity's concepts.
+# It's fine to let Unity regenerate the meta files on the fly.
+Runtime/Volumetric/**/*.meta

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="CsBoids.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" >
+
+    <StackPanel Margin="10" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" >
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">maxVelocty</TextBlock>
+            <Slider x:Name="maxVelocty" Width="200" Minimum=".5" Maximum="50" StepFrequency=".1" ValueChanged="maxVelocty_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">maxRotationAngle</TextBlock>
+            <Slider x:Name="maxRotationAngle" Width="200" Minimum=".0001" Maximum=".01" StepFrequency=".0001" ValueChanged="maxRotationAngle_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">neighborDistance</TextBlock>
+            <Slider x:Name="neighborDistance" Width="200" Minimum="0.1" Maximum="15" StepFrequency=".1" ValueChanged="neighborDistance_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">arrivalSlowingDistance</TextBlock>
+            <Slider x:Name="arrivalSlowingDistance" Width="200" Minimum="0.1" Maximum="25" StepFrequency=".1" ValueChanged="arrivalSlowingDistance_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">arrivalMaxSpeed</TextBlock>
+            <Slider x:Name="arrivalMaxSpeed" Width="200" Minimum="0.1" Maximum="25" StepFrequency=".1" ValueChanged="arrivalMaxSpeed_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">cohesionWeight</TextBlock>
+            <Slider x:Name="cohesionWeight" Width="200" Minimum="0" Maximum="1" StepFrequency=".01" ValueChanged="cohesionWeight_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">separationWeight</TextBlock>
+            <Slider x:Name="separationWeight" Width="200" Minimum="0" Maximum="1" StepFrequency=".01" ValueChanged="separationWeight_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">alignmentWeight</TextBlock>
+            <Slider x:Name="alignmentWeight" Width="200" Minimum="0" Maximum="1" StepFrequency=".01" ValueChanged="alignmentWeight_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">seekWeight</TextBlock>
+            <Slider x:Name="seekWeight" Width="200" Minimum="0" Maximum="1" StepFrequency=".001" ValueChanged="seekWeight_ValueChanged"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Margin="3" Width="160" HorizontalAlignment="Right">socializeWeight</TextBlock>
+            <Slider x:Name="socializeWeight" Width="200" Minimum=".01" Maximum="1" StepFrequency=".01" ValueChanged="socializeWeight_ValueChanged"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WindowsPerformanceRecorder Version="1.0" Author="Microsoft Corporation" Copyright="Microsoft Corporation" Company="Microsoft Corporation">
+  <Profiles>
+    <!-- Common ETW collector referenced by all profiles. -->
+    <EventCollector Id="EventCollector_UserMode" Name="WPR User Mode Event Collector">
+      <BufferSize Value="1020" />
+      <Buffers Value="95" />
+    </EventCollector>
+
+    <EventProvider Id="Microsoft.MixedReality.Volumetric.VaSDKPy" Name="b672a97a-4000-5243-5fe0-864e759994bd" />
+    <EventProvider Id="Microsoft.MixedReality.Volumetric.RuntimeProvider" Name="D5AA12EC-D773-4F30-B719-630F3F522DC9" />
+    <EventProvider Id="Microsoft.MixedReality.Volumetric.VaSDKCS" Name="35d8626a-39b9-5e50-91cf-a0616d3aed3b" />
+    <EventProvider Id="Microsoft.MixedReality.Volumetric.VaSDKCpp" Name="e86a91a5-41a8-5942-a79e-a4cf1b798f9b" />
+
+
+    <Profile Id="VaSDK.Verbose.File" Name="VaSDK" Description="Volumetric SDK" LoggingMode="File" DetailLevel="Verbose" Default="true">
+      <Collectors>
+        <EventCollectorId Value="EventCollector_UserMode">
+          <EventProviders>
+            <!-- Volumetric -->
+            <EventProviderId Value="Microsoft.MixedReality.Volumetric.VaSDKPy" />
+            <EventProviderId Value="Microsoft.MixedReality.Volumetric.RuntimeProvider" />
+            <EventProviderId Value="Microsoft.MixedReality.Volumetric.VaSDKCS" />
+            <EventProviderId Value="Microsoft.MixedReality.Volumetric.VaSDKCpp" />
+          </EventProviders>
+        </EventCollectorId>
+      </Collectors>
+    </Profile>
+
+  </Profiles>
+</WindowsPerformanceRecorder>

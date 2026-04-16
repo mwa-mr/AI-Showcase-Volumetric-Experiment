@@ -1,0 +1,38 @@
+---
+AccessModifierOffset: -4
+AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 0
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBraces: Custom
+BreakConstructorInitializers: 'BeforeComma'
+BreakTemplateDeclarations: Yes
+ColumnLimit: 180
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+IndentCaseLabels: false
+IndentWidth: 4
+IndentWrappedFunctionNames: false
+InsertNewlineAtEOF: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+PenaltyReturnTypeOnItsOwnLine: 100
+PointerAlignment: Left
+SortIncludes: Never
+SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInAngles: Never
+SpacesInContainerLiterals: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+Standard: 'c++20'
+UseTab: Never
+...

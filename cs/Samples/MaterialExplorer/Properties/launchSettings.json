@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CsMaterialExplorer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CsMaterialExplorer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
