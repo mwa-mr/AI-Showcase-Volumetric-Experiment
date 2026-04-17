@@ -37,4 +37,7 @@
     <Platform Project="x64" />
     <Deploy />
   </Project>
+  <Project Path="ShapeSpawner\CsShapeSpawner.csproj">
+    <Platform Project="x64" />
+  </Project>
 </Solution>
